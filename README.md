@@ -7,6 +7,10 @@ get different URL depending on if you click or double click
 
 ## Usage
 
+Set hx-ext="click-or-dblclick" and dblclick-url="/otherURL"
+
+One click will go to your normal URL, double click will go to your dblclick-url
+
 ```html
 <button hx-target="#target"
   hx-get="/defaultURL"
