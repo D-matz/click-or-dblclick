@@ -2,14 +2,19 @@
 <html>
 <head>
   <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/D-matz/click-or-dblclick/click-or-dblclick.js"></script>
+
 </head>
 <body>
-  <button hx-get="/click-or-dblclick/banana.jpeg" hx-target="#my-div" hx-swap="outerHTML">
-    Load Content
+  <button hx-target="#my-div"
+  hx-get="/click-or-dblclick/apple"
+  hx-ext="click-or-dblclick" dblclick-url="/example2"
+  hx-trigger="click delay:0.5s, dblclick">
+    Click or Double Click
   </button>
 
   <div id="my-div">
-    Original content
+    result
   </div>
 </body>
 </html>
