@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://unpkg.com/htmx.org@2.0.4" integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button hx-get="https://example.com" hx-target="#my-div" hx-swap="outerHTML">
+    Load Content
+  </button>
+
+  <div id="my-div">
+    Original content
+  </div>
+</body>
+</html>
