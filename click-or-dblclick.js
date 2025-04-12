@@ -1,6 +1,7 @@
 var setTargetTo = null;
 htmx.defineExtension('click-or-dblclick', {
   onEvent : function(name, evt) {
+    console.log(name, setTargetTo);
     if (name === 'htmx:configRequest') {
       if(evt && evt.detail && evt.detail.triggeringEvent)
       {
