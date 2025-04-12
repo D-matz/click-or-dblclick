@@ -6,15 +6,14 @@
 
 </head>
 <body>
-  <button hx-target="#my-div"
+  <button hx-target="#res1"
   hx-get="/click-or-dblclick/apple"
-  hx-ext="click-or-dblclick" dblclick-url="/click-or-dblclick/banana"
+  hx-ext="click-or-dblclick" dblclick-url="/click-or-dblclick/banana" dblclick-target="#res2"
   hx-trigger="click delay:0.3s, dblclick">
     Click or Double Click
   </button>
 
-  <div id="my-div">
-    result
-  </div>
+  <div id="res1">click button to make me an apple</div>
+  <div id="res2">double click button to make me a banana</div>
 </body>
 </html>
